@@ -1,7 +1,7 @@
 const { parseConfig } = require('duck-core');
 
 const initConfig = {
-    entryScript: '../src/index',
+    entryScript: '../src/entry_client.js',
     entryHtml: '../src/index.html',
     output: '../dist',
     port: 8088,
