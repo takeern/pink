@@ -1,5 +1,5 @@
 const getLogoSrc = () => {
-    return fetch('http://127.0.0.1:1111/testRedux', {
+    return fetch('http://127.0.0.1:2323/testRedux', {
         method: 'POST',
     });
 };

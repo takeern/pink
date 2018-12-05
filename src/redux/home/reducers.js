@@ -8,7 +8,6 @@ const initState = {
   
 export default (state = initState, action) => {
     switch(action.type) {
-
         case(GOT_LOGO_SRC): {
             return {
                 ...state,

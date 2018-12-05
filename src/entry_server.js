@@ -9,10 +9,9 @@ import { matchRoutes, renderRoutes } from 'react-router-config';
 
 import routes from './route';
 
-// const debug = require('debug')('app:entry_server');
+
 
 export default async (url) => {
-    // loadAllDataServer(routes, store, url);
     const history = createMemoryHistory();
     const store = createStore(history);
 

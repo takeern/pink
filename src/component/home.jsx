@@ -42,17 +42,20 @@ export default class Home extends PureComponent {
                 });
         });
     }
+
+
     render() {
         const { img_src } = this.props;
         debug(img_src);
         return (
           <div className="demo">
-            <p className="message"> { this.props.message } </p>
+            <p className="message" > { this.props.message } </p>
             <p className="footer"> { this.props.poweredBy } </p>
             <div>
-                {/* <img src={this.porps} /> */}
+                <img src={img_src} />
                 <p className="footer"> { img_src } </p>
             </div>
+            
           </div>
         );
     }

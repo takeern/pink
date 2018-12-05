@@ -17,43 +17,49 @@ class AsyncRouter extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            previousLocation: null,
             showChildren: false,
-            shouldGetInfo : true,
-        };
-        props = {
-            shouldGetInfo : true,
+            firstGetInfo : true,
+            lastPath: null,
         };
     }
-    // static getDerivedStateFromProps(props, prevState) {
-    //     console.log(props, prevState);
-    //     const { routes, store, location } = props;
-    //     const m = loadAllData(store, routes, location).then(a =>
-    //         console.log('hellp')   
-    //     )
-    //     console.log(m)
-    //     return null;
-    // }
+   
+    componentWillReceiveProps (nextprops) {
+        const { routes, store, location, children } = this.props;
+
+        if(nextprops.location !== this.props.location) {
+            
+            loadAllData(store, routes, nextprops.location).then(() => {
+                this.setState({
+                    nextlocation: nextprops.location
+                });
+            })
+        }
+    }
     render () {
         const { routes, store, location, children } = this.props;
-        if(this.state.shouldGetInfo) {
-            if(!this.props.initState) {
+        
+        if (this.state.firstGetInfo) {
+            if (!this.props.initState) {
+                
                 loadAllData(store, routes, location).then(() => {
-                    this.props.shouldGetInfo = false;
                     this.setState({
                         showChildren: true,
-                        shouldGetInfo: false,
+                        firstGetInfo: false,
+                        nextlocation: location
                     });
                 });
             } else {
                 this.setState({
                     showChildren: true,
-                    shouldGetInfo: false,
+                    firstGetInfo: false,
+                    nextlocation: location
                 });
             }
-        } 
-        const { showChildren } = this.state;
-        console.log(showChildren);
+
+        }
+
+        const showChildren = this.state.showChildren && this.state.nextlocation === this.props.location ;
+
         return (
             <Route
                 location={location}

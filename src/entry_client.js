@@ -8,7 +8,7 @@ import { createBrowserHistory } from 'history';
 import { ConnectedRouter } from 'connected-react-router';
 
 import routes from './route';
-import AsyncRouter from './asyncRouter';
+import AsyncRouter from './asyncRouter.jsx';
 
 
 const creatApp = (initState) => {
