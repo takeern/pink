@@ -53,7 +53,6 @@ export default class Home extends PureComponent {
             <p className="footer"> { this.props.poweredBy } </p>
             <div>
                 <img src={img_src} />
-                <p className="footer"> { img_src } </p>
             </div>
             
           </div>
