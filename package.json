@@ -31,10 +31,6 @@
       "command": "webpack --progress --config ./config/webpack.server.js"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/takeern/duck-template.git"
-  },
   "author": "",
   "license": "ISC",
   "devDependencies": {

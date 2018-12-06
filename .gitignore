@@ -5,10 +5,11 @@ node_modules
 .idea
 .vscode
 .history
-.babelrc
 dist
 staticServer.js
 node_modules
 webpack.config.js
 package-lock.json
+.gitignore
+.npmignore
 
