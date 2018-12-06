@@ -31,12 +31,22 @@ export default class Home extends PureComponent {
         return new Promise(resolve => {
             getLogoSrc()
                 .then(res => {
-                    return res.json();
+                    if(res.ok) return res.json();
+                    
+                    throw new Error('net not work');
                 })
                 .then(data => {
                     store.dispatch({
                         type: GOT_LOGO_SRC,
                         payload: data.img_src,
+                    });
+                    return resolve();
+                })
+                .catch(() => {
+                    console.log('%c you can try npm run server', 'background:#aaa;color:#bada55');
+                    store.dispatch({
+                        type: GOT_LOGO_SRC,
+                        payload: './src/static/img/duck.png',
                     });
                     return resolve();
                 });
@@ -46,7 +56,6 @@ export default class Home extends PureComponent {
 
     render() {
         const { img_src } = this.props;
-        debug(img_src);
         return (
           <div className="demo">
             <p className="message" > { this.props.message } </p>
