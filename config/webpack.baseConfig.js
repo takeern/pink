@@ -1,18 +1,7 @@
 const { parseConfig } = require('duck-core');
+const baseConfig = require('./baseConfig.json')
 
-const initConfig = {
-    entryScript: '../src/entry_client.js',
-    entryHtml: '../src/index.html',
-    output: '../dist',
-    port: 8088,
-    host: 'localhost',
-    isTs: false,
-    outPutName: 'index.js',
-    dirname: __dirname,
-};
-
-// const { devConfig, prodConfig, servConfig } = parseConfig(initConfig);
-const p = parseConfig(initConfig);
+const p = parseConfig(baseConfig);
 
 module.exports = {
     p,
