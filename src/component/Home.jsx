@@ -8,7 +8,7 @@ import '../static/css/home.less';
 import { GOT_LOGO_SRC } from '../redux/home/constans';
 import { getLogoSrc } from '../redux/home/action';
 
-const debug = require('debug')('app:home');
+// const debug = require('debug')('app:home');
 
 const mapStateToProps = (state) => {
     const { message, poweredBy, img_src } = state.home;
@@ -57,14 +57,15 @@ export default class Home extends PureComponent {
     render() {
         const { img_src } = this.props;
         return (
-          <div className="demo">
-            <p className="message" > { this.props.message } </p>
-            <p className="footer"> { this.props.poweredBy } </p>
-            <div>
-                <img src={img_src} />
-            </div>
-            
-          </div>
+            <React.Fragment>
+                <div className="demo">
+                    <p className="message" > { this.props.message } </p>
+                    <p className="footer"> { this.props.poweredBy } </p>
+                    <div>
+                        <img src={img_src} />
+                    </div>
+                </div>
+            </React.Fragment>
         );
     }
 }
