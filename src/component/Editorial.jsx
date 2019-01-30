@@ -6,7 +6,7 @@ export default () => {
             <h3 style={{ marginBlockStart: 0 }} >Editor-in-Chief</h3>
             • <b>Prof. Dr. I. P. Gmpel：</b>
             Fachochschule Konstanz, Germany<br/><br/>
-            <b>Email: <a href="mailto:editorial@ijmsr.org ">editorial@ijmsr.org </a></b>
+            <b>Email: <a href="mailto:editorial@ijomsr.org ">editorial@ijomsr.org </a></b>
             <h3>Editors</h3>
             • <b>Dr. H. EIMaraghy:</b>University of Windsor, Canada<br/><br/>
             • <b>Dr. H. EIwany:</b>Alexandria University, Egypt<br/><br/>

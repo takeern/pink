@@ -10,7 +10,7 @@ export default () => {
             ACADEMIC PUBLISHING HOUSE GROUP LIMITED.<br/>
             Quastisky Building, Road Town, Tortola, British Virgin Islands<br/>
             UK Postal Code: VG1110 <br/>
-            E-mail: editorial@ij-em.com <br/><br/>
+            E-mail: editorial@ijomsr.org <br/><br/>
             • <b>Asia Pacific Regional Office</b><br/>
             ACADEMIC PUBLISHING HOUSE<br/>
             Address: FLAT/RM C 23/F LUCKY PLAZA 315-321 LOCKHART RD WANCHAI HK

@@ -22,7 +22,7 @@ export default () => {
             • Physical Education
             <h3>Manuscript Submission:</h3>
             Papers should be submitted to the Journal's submission email address:<br/>
-            <b>Editor-in-Chief, Prof. Dr. I. P. Gmpel <br/>(Email: <a href="mailto: editorial@ijmsr.org"> editorial@ijmsr.org</a>)</b><br/>
+            <b>Editor-in-Chief, Prof. Dr. I. P. Gmpel <br/>(Email: <a href="mailto: editorial@ijomsr.org"> editorial@ijomsr.org</a>)</b><br/>
             The covering email should clearly state the name, address and affiliation of the corresponding author. Each paper will be provided with a paper ID for further reference.<br/>
             • IJEM invites original, previously unpublished, research papers, review, survey and tutorial papers, application papers, plus case studies, short research notes and letters, on both applied and theoretical aspects.<br/>
             • Submission implies that the manuscript has not been published previously, and is not currently submitted for publication elsewhere. Submission also implies that the corresponding author has consent of all authors.<br/>

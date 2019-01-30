@@ -7,9 +7,9 @@ export default class App extends Component {
         return (
             <div className='header'>
                 <div className='title'>International Journal of Management Science Research</div>
-                <div className='num'>(IJMSR, ISSN: 2536-605X)</div>
+                <div className='num'>(IJOMSR, ISSN: 2536-605X)</div>
                 <div>
-                    <a href='http://www.ijmsr.org'>www.ijmsr.org</a>
+                    <a href='http://www.ijomsr.org'>www.ijomsr.org</a>
                 </div>
             </div>
         );

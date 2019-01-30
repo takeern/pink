@@ -11,7 +11,7 @@ export default class Home extends PureComponent {
                 <div className='home'>
                    <div style={{ display: 'flex' }}>
                        <div>
-                           <img src='../src/static/img/hand.jpg' style={{ width: 200 }}/>
+                           <img src='../src/static/img/hand.png' style={{ width: 200 }}/>
                        </div>
                        <div style={{ fontSize: 17, padding: '0px 20px' }}>
                             <span style={{ fontWeight: 900 }}>International Journal of Education and Management (IJEM, ISSN: 2415-1645)</span>
@@ -22,7 +22,7 @@ export default class Home extends PureComponent {
                    <div style={{ marginLeft: 10 }}>
                        <h3>Editor-in-Chief</h3>
                             • <b>Prof. Dr. I. P. Gmpel:</b>Fachochschule Konstanz, Germany<br/><br/>
-                            <b>Email: <a href="mailto:editorial@ijmsr.org">editorial@ijmsr.org</a></b>
+                            <b>Email: <a href="mailto:editorial@ijomsr.org">editorial@ijomsr.org</a></b>
                             <h3>Area of Interests</h3>
                             • Education Science<br/>
                             • Macroeconomics<br/>
