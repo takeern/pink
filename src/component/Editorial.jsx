@@ -19,9 +19,6 @@ export default () => {
             • <b>Prof. E. Tovar:</b>Universidad Politechnica de Madrid, Spain<br/><br/>
             • <b>Prof. T. Schelker:</b>Swiss College of Agriculture, Switzerland<br/><br/>
             • <b>Prof. K. S. Taraman:</b>Lawrence Tech. University, USA<br/><br/>
-            • <b>Dr. Fan Yuqing:</b>Beijing Jiaotong University<br/><br/>
-            • <b>Dr. Zeng Tao:</b>Xi'an University of Architecture And Technology<br/><br/>
-            • <b>Dr. Li Jiangfeng:</b>Zhengzhou Normal University<br/><br/>
         </div>
     );
 };

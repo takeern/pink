@@ -21,7 +21,7 @@ export default class App extends Component {
                 <div className='content'>
                     {renderRoutes(route.routes)}
                 </div>
-                <div className='footer' >Copyright©2014-2018 Journal of Innovation and Social Science Research. All Rights Reserved.</div>
+                <div className='footer' >Copyright©2018-2019 International Journal of Education and Management. All Rights Reserved.</div>
             </div>
         );
     }

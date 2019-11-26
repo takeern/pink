@@ -14,9 +14,9 @@ export default class Home extends PureComponent {
                            <img src='../src/static/img/hand.png' style={{ width: 200 }}/>
                        </div>
                        <div style={{ fontSize: 17, padding: '0px 20px' }}>
-                            <span style={{ fontWeight: 900 }}>International Journal of Education and Management (IJEM, ISSN: 2415-1645)</span>
+                            <span style={{ fontWeight: 900 }}>International Journal of Management Science Research (IJMSR, ISSN: 2536-605X)</span>
                             is a scholarly peer-reviewed international scientific journal published quarterly for researchers, developers, technical managers, and educators in the education and management field. It provide a high profile, leading edge forum for academic researchers, industrial professionals, engineers, consultants, managers, educators and policy makers working in the field to contribute and disseminate innovative new work on all the areas of education and management. 
-                            IJEM invites original, previously unpublished, research, survey and tutorial papers, plus case studies and short research notes, on both applied and theoretical aspects of education and management.
+                            IJMSR invites original, previously unpublished, research, survey and tutorial papers, plus case studies and short research notes, on both applied and theoretical aspects of education and management.
                        </div>
                    </div>
                    <div style={{ marginLeft: 10 }}>
@@ -41,7 +41,7 @@ export default class Home extends PureComponent {
                             • Ethics<br/>
                             • Physical Education<br/>
                             <h3>Subscription Information</h3>
-                            The International Journal of Education and Management (IJEM, ISSN: 2415-1645) is published one volume with 4 issues a year. Subscriptions may be entered at any time for a volume at the following rates.
+                            The International Journal of Management Science Research (IJMSR, ISSN: 2536-605X) is published one volume with 6 issues a year. Subscriptions may be entered at any time for a volume at the following rates.
                             <br /><br />
 
                             <table>
