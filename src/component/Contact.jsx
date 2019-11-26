@@ -10,12 +10,6 @@ export default () => {
             ADWEN HOUSE PUBLISHING LIMITED GROUP LIMITED.<br/>
             Bramford House 23 Westfield Park, Bristol, United Kingdom BS6 6LT<br/>
             E-mail: editorial@ijomsr.org <br/><br/>
-            • <b>Asia Pacific Regional Office</b><br/>
-            ADWEN HOUSE PUBLISHING LIMITED<br/>
-            Address: FLAT/RM C 23/F LUCKY PLAZA 315-321 LOCKHART RD WANCHAI HK
-            <br/>
-            <br/>
-            <img src="../src/static/img/logo.png"></img>
         </div>
     );
 };
