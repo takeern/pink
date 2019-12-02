@@ -47,16 +47,12 @@ export default class Home extends PureComponent {
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td>• Institutional Subscription:</td>
-                                        <td><b>EUR 120</b></td>
-                                    </tr>
-                                    <tr>
-                                        <td>• Personal Subscription:</td>
-                                        <td><b>EUR 100</b></td>
+                                        <td>• Article Processing Fees:</td>
+                                        <td><b>EUR 200</b></td>
                                     </tr>
                                     <tr>
                                         <td>• Price for Single Copy:</td>
-                                        <td><b>EUR 30</b></td>
+                                        <td><b>EUR 20</b></td>
                                     </tr>
                                 </tbody>
                             </table>
