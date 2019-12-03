@@ -1,45 +1,57 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Api from '../ulits/api';
 
-export default () => {
-    const pathMap = [
-        {
-            name: 'Vol 1, No 6 (IJOMSR 2018 Dec)',
-            path: '1-6-2018',
-        },
-        {
-            name: 'Vol 1, No 5 (IJOMSR 2018 Oct)',
-            path: '1-5-2018',
-        },
-        {
-            name: 'Vol 1, No 4 (IJOMSR 2018 Aug)',
-            path: '1-4-2018',
-        },
-        {
-            name: 'Vol 1, No 3 (IJOMSR 2018 Jun)',
-            path: '1-3-2018',
-        },
-        {
-            name: 'Vol 1, No 2 (IJOMSR 2018 Apr)',
-            path: '1-2-2018',
-        },
-        {
-            name: 'Vol 1, No 1 (IJOMSR 2018 Feb)',
-            path: '1-1-2018',
-        },
-    ];
-    const list = pathMap.map((item, index) => {
+export default function Issue(){
+    const [ state, setState ] = useState({
+        data: [],
+    });
+
+    const getData = async () => {
+        const res = await fetch(Api.getPageList).then(res => res.json());
+        if (res.resData.code && res.resData.code === 200) {
+            setState({
+                ...state,
+                data: res.resData.data,
+            });
+            
+        }
+    };
+    getData();
+
+    if (state.data.length === 0) {
+        return null;
+    } else {
+        const mouth = [
+            'Feb',
+            'Apr',
+            'Jun',
+            'Aug',
+            'Oct',
+            'Dec',
+        ];
+
+        const pathMap = state.data.map((item) => {
+            const arr = item.match(/([1-6])-([1-2])-([\d]{4})/i);
+            return {
+                name: `Vol ${arr[2]}, No ${arr[1]}, (IJOMSR ${arr[3]} ${mouth[arr[1]]})`,
+                path: item,
+            };
+        });
+        
+        const list = pathMap.map((item, index) => {
+            return (
+                <div key={index} className='issues'>
+                    <a href={`/src/static/img/${item.path}`}>{item.name}</a>
+                    <br />
+                    <br />
+                </div>
+            );
+        });
         return (
-            <div key={index} className='issues'>
-                <a href={`/src/static/img/${item.path}.pdf`}>{item.name}</a>
-                <br />
-                <br />
+            <div style={{ marginLeft: 10 }}>
+                <h3 style={{ marginBlockStart: 0 }} >Issues</h3>
+                {list}
             </div>
         );
-    });
-    return (
-        <div style={{ marginLeft: 10 }}>
-            <h3 style={{ marginBlockStart: 0 }} >Issues</h3>
-            {list}
-        </div>
-    );
+    }
 };
