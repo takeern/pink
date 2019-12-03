@@ -16,7 +16,7 @@ const sortJournal = (b, a) => {
     return (arr[2] - brr[2]) * 100 + (arr[1] - brr[1]) * 10 + (arr[0] - brr[0]);
 }
 
-fs.readdir('../src/static/img/', (err, files) => {
+fs.readdir('../src/static/pdf/', (err, files) => {
     files.forEach((item) => {
         if (checkIsVolume(item)) {
             data.journal.push(item);
