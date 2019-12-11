@@ -12,3 +12,4 @@ webpack.config.js
 package-lock.json
 .npmignore
 .pdf
+/pdf
