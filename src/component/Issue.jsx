@@ -16,7 +16,9 @@ export default function Issue(){
             
         }
     };
-    getData();
+    if (data.length === 0) {
+        getData();
+    }
 
     if (state.data.length === 0) {
         return null;
