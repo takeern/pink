@@ -44,7 +44,7 @@ export default function Issue(){
         const list = pathMap.map((item, index) => {
             return (
                 <div key={index} className='issues'>
-                    <a href={`/src/static/img/${item.path}`}>{item.name}</a>
+                    <a href={`/src/static/pdf/${item.path}`}>{item.name}</a>
                     <br />
                     <br />
                 </div>
